@@ -124,6 +124,6 @@ MonoBehaviour:
     woodPrice: 20
     stonePrice: 20
     foodPrice: 20
-  objectName: 
+  objectName: House
   placed: 0
   baseResourcesGained: 1

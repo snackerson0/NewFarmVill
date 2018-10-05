@@ -518,6 +518,6 @@ MonoBehaviour:
     woodPrice: 0
     stonePrice: 0
     foodPrice: 0
-  objectName: 
+  objectName: Lumberjack
   placed: 0
   baseResourcesGained: 1

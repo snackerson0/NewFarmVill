@@ -61,12 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Build.cs" />
-    <Compile Include="Assets\Building.cs" />
-    <Compile Include="Assets\Buildings.cs" />
-    <Compile Include="Assets\BuyButton.cs" />
-    <Compile Include="Assets\GridElement.cs" />
-    <Compile Include="Assets\Resources.cs" />
+    <Compile Include="Assets\Scripts\Build.cs" />
+    <Compile Include="Assets\Scripts\Building.cs" />
+    <Compile Include="Assets\Scripts\Buildings.cs" />
+    <Compile Include="Assets\Scripts\BuyButton.cs" />
+    <Compile Include="Assets\Scripts\GridElement.cs" />
+    <Compile Include="Assets\Scripts\Info.cs" />
+    <Compile Include="Assets\Scripts\Resources.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Snackablez/Documents/Unity Projects/NewFarmVill/NewFarmVill/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
