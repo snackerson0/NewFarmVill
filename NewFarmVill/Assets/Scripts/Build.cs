@@ -146,4 +146,22 @@ public class Build : MonoBehaviour
             buildInProgress = false;
         }
     }
+
+    public void RebuildBuildings(int buildingID, int gridID, int buildingLevel)
+    {
+        GameObject g = null;
+        foreach (var gO in buildings.buildables)
+        {
+            Building b = gO.GetComponent<Building>();
+            if (b.info.id == buildingID)
+            {
+                g = b.gameObject; 
+            }
+
+            GameObject building = Instantiate(g);
+            buildings.builtObjects.Add(building);
+
+            Building loadedBuilding = building.GetComponent<Building>();
+        }
+    }
 }
