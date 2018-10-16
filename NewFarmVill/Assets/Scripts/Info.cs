@@ -34,16 +34,19 @@ public class Info : MonoBehaviour
 
 	    destoryButton.interactable = selectedBuilding;
         bool result = false;
-        if (!resources) print("Resources null");
-        if (resources.wood >= selectedBuilding.priceTag.woodPrice &&
-            resources.stone >= selectedBuilding.priceTag.stonePrice &&
-            resources.food >= selectedBuilding.priceTag.foodPrice)
-        {
-            result = true;
+	    if (selectedBuilding)
+	    {
+	        if (resources.wood >= selectedBuilding.priceTag.woodPrice &&
+	            resources.stone >= selectedBuilding.priceTag.stonePrice &&
+	            resources.food >= selectedBuilding.priceTag.foodPrice)
+	        {
+	            result = true;
 
-        }
+	        }
+	    }
 
-    }
+	    upgradeButton.interactable = result;
+	}
 
     public void OnButtonUpgrade()
     {
